@@ -63,11 +63,14 @@ header{
 
   ul{
 
-    display: flex;
-    gap: 2%;
-    justify-content: center;
     line-height:4rem;
+    text-align: center;
     font-size: 1.6rem;
+
+    li{
+      display: inline-block;
+      margin: 20px;
+    }
   }
 }
 
@@ -103,11 +106,12 @@ main{
 
   #projects{
     margin-top: 10%;
-    display: flex;
+    /* display: flex; */
     gap: 2%;
-    background-color: rgba(163, 163, 210, 0.716);
+    background-color: rgba(66, 66, 69, 0.399);
     font-size: 1.6rem;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    text-align: center;
 
 
     li,a{
@@ -117,16 +121,19 @@ main{
         font-size: 3rem;
         color: transparent;
         animation:effect 4s linear infinite;
+        display: inline-block;
+        margin: 20px;
     }
   }
 
 #form{
   margin-top: 10%;
-  /* border: 1px solid red; */
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   padding:2% 12%;
+
+  table{
+    margin-top: 2%;
+    margin: auto;
+  }
 
   h2{
     font-size: 6rem;
