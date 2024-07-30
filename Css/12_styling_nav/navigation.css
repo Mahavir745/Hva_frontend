@@ -56,9 +56,10 @@ li::before{
 
 /*!! not working */
 
-.navbar > ul > li > a{
+.navbar > ul > #list-1 > a{
   color: red;
 }
-.navbar > ul > li{
-  color: blue;
+.navbar ul > li + li {
+  color: blue; 
+
 }
