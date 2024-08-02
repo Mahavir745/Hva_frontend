@@ -34,3 +34,17 @@ let temperaturesInFahrenheit = temperatures.map((ele)=>{
 })
 
 console.log(temperaturesInFahrenheit);
+
+//todo: iterate and create a new filtered array using filter()
+
+let belowFreezing = [-1,0,23,-4,35,-1.0]
+// let result = belowFreezing.filter(function(ele){
+//   return ele < 0;
+// })
+// console.log(result);
+
+// let result = belowFreezing.filter((ele)=>{
+//   return ele < 0;
+// })
+
+// console.log(result);
