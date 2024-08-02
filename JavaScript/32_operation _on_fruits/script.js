@@ -62,25 +62,10 @@ let fruits = ['apple',"banana","cherry","date","pineapple"]
 
 //todo: create a new filtered and modified array using filter() and map()
 
-// fruits.filter(function(ele){
-//   if(ele.includes('a')) console.log(ele);
-// })
-
-
-// //! error, how to remove undefined
-// let aFruitesUpper = fruits.map(function(ele){
-//   if(ele.includes('a')) return ele.toUpperCase()
-// })
-
-// console.log(aFruitesUpper);
-
-
-
-//? confusion:::
-
-let arr = []
-let aFruitesUpper = fruits.map(function(ele){
-  if(ele.includes('a')) arr.push(ele.toUpperCase())
+let fruitIna = fruits.filter(function(ele){
+  if(ele.includes('a')) return ele;
 })
 
-// console.log(arr);
+let aFruitsUpper = fruitIna.map(function(ele){
+  console.log(ele.toUpperCase());
+})
