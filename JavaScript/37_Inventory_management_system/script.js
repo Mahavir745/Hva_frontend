@@ -53,15 +53,31 @@ updateProduct(2, 6)
 console.log(inventory);
 
 
-//todo: Define the remove Product Function:
+//todo: update product by using map
+function updateProductWithMap(productId, quantity) {
 
-function removeProduct(productId){
-  inventory = inventory.filter((ele)=>{
-   return ele.id !== productId
-  })
+  inventory = inventory.map((ele)=>{
+    if(ele.id === productId){
+      ele.quantity = quantity
+    }
+    return ele
+  });
 }
 
-removeProduct(3)
-
+updateProductWithMap(2,15)
 
 console.log(inventory);
+
+
+// //todo: Define the remove Product Function:
+
+// function removeProduct(productId){
+//   inventory = inventory.filter((ele)=>{
+//    return ele.id !== productId
+//   })
+// }
+
+// removeProduct(3)
+
+
+// console.log(inventory);
