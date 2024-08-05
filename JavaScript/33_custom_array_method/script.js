@@ -69,6 +69,9 @@ console.log(outputNewFilter);
 
 
 
+//! for interview purpose how to make foreach,map and filter
+
+
 // Array.prototype.forEachonefunction=function(callback){
 //   for(let i =0; i< this.length; i++){
 //     callback(this[i], i, this)
