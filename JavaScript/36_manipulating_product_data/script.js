@@ -30,9 +30,12 @@ let productsWithTax = products.map((ele)=>({
     id: ele.id,
     name : ele.name,
     category: ele.category,
-    price: ele.price + (ele.price*0.1),
-    priceWithTax: ele.price + (ele.price*0.1)
+    price: ele.price,
+    productsWithTax: ele.price + ele.price*0.1
 }))
+
+
+console.log(productsWithTax);
 
 displayProducts(productsWithTax)
 
