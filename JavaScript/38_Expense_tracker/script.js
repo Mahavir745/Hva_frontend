@@ -55,6 +55,27 @@ updateExpense(1,400)
 // console.log(expenses)
 
 
+//todo: Define an another function for update but by using map
+
+function updateExpenseWithMap(productId,amount){
+
+  expenses = expenses.map((ele)=>{
+    if(ele.id === productId){
+      ele.amount = amount
+    }
+
+    return ele
+  })
+}
+
+
+updateExpenseWithMap(1,500)
+
+
+
+
+
+
 //todo: Define the removeExpense Function:
 
 let newarr=[]
