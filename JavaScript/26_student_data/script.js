@@ -93,22 +93,26 @@ class Student {
     return "hello "+this.name;
   }
   getFullAddress(){
-    const {country,city,pin_code} = this.address
+    // const {country,city,pin_code} = this.address
+    const country = this.address.country;
+    const city = this.address.city;
+    const pin_code = this.address.pin_code;
+    
     return `country: ${country} city: ${city} pin code: ${pin_code}`
   }
 }
 
 const student = new Student("mahavir","@kumar",19,"india","dhanbad",828105)
-console.log(student);
-console.log(student.greet());
-console.log(student.name);
-console.log(student.getFullAddress());
+// console.log(student);
+// console.log(student.greet());
+// console.log(student.name);
+// console.log(student.getFullAddress());
 
 
 //todo: Create and log Student Object:- store an another student data:
 
 const student2= new Student("kumar","I@veer",19,"India","Jharkhand",828104)
-console.log(student);
+// console.log(student);
 
 //todo: Call the greet method and getfulladress method on student objects:
 
