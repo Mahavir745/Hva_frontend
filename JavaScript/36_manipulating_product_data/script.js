@@ -14,7 +14,7 @@ let products = [
 
 function displayProducts(products){
   products.forEach((ele)=>{
-    console.log(`${ele.name} - Rs${ele.price}`);
+    console.log(`${ele.name} - Rs ${ele.price}`);
     
   })
 }
@@ -30,35 +30,36 @@ let productsWithTax = products.map((ele)=>({
     id: ele.id,
     name : ele.name,
     category: ele.category,
-    price: ele.price + (ele.price*0.1)
+    price: ele.price + (ele.price*0.1),
+    priceWithTax: ele.price + (ele.price*0.1)
 }))
 
 displayProducts(productsWithTax)
 
 
 
-//todo: filter and display food products:
+// //todo: filter and display food products:
 
-let foodProducts = productsWithTax.filter((ele)=>{
-  return ele.category =='Dry fruit'
-})
+// let foodProducts = productsWithTax.filter((ele)=>{
+//   return ele.category =='Dry fruit'
+// })
 
-console.log(foodProducts);
+// console.log(foodProducts);
 
-//todo: find affordable products:
+// //todo: find affordable products:
 
-let affordableProducts = productsWithTax.filter((ele)=>{
-  if(ele.price <=300){
-      return `${ele.name} - Rs${ele.price}`
-  }
-})
+// let affordableProducts = productsWithTax.filter((ele)=>{
+//   if(ele.price <=300){
+//       return `${ele.name} - Rs${ele.price}`
+//   }
+// })
 
-console.log(affordableProducts);
+// console.log(affordableProducts);
 
-//todo: calculate total price:
-let sum = 0
-let totalPrice = productsWithTax.map((ele)=>{
-  sum+=ele.price
-})
+// //todo: calculate total price:
+// let sum = 0
+// let totalPrice = productsWithTax.map((ele)=>{
+//   sum+=ele.price
+// })
 
-console.log(sum);
+// console.log(sum);
