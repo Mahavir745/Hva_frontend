@@ -1,5 +1,14 @@
 //todo: Define the Array of Expenses:
 
+//! found an error:
+
+// let expenses = [
+//   {id: 1, name: "lipstick", amount:  250, date: '02-08-2024'},
+//   {id: 2, name: "eyeliner", amount:  150, date:  '03-08-2024'},
+//   {id: 3, name: "Mashkara", amount:  120, date: '02-08-2024'},
+//   {id: 4, name:  "kajal",   amount: 299, date: '02-8-2024'}
+// ]
+
 class Expenses{
   constructor(id,name,amount,date){
     this.id = id;
