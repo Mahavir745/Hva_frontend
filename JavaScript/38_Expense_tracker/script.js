@@ -1,13 +1,11 @@
 //todo: Define the Array of Expenses:
 
-//! found an error:
-
-// let expenses = [
-//   {id: 1, name: "lipstick", amount:  250, date: '02-08-2024'},
-//   {id: 2, name: "eyeliner", amount:  150, date:  '03-08-2024'},
-//   {id: 3, name: "Mashkara", amount:  120, date: '02-08-2024'},
-//   {id: 4, name:  "kajal",   amount: 299, date: '02-8-2024'}
-// ]
+let expenses = [
+  {id: 1, name: "lipstick", amount:  250, date: '02-08-2024'},
+  {id: 2, name: "eyeliner", amount:  150, date:  '03-08-2024'},
+  {id: 3, name: "Mashkara", amount:  120, date: '02-08-2024'},
+  {id: 4, name:  "kajal",   amount: 299, date: '02-8-2024'}
+]
 
 class Expenses{
   constructor(id,name,amount,date){
@@ -18,12 +16,14 @@ class Expenses{
   }
 }
 
-let expenses =[
-  new Expenses(1,"lipstick", 250,'02-08-2024'),
-  new Expenses(2,"eyeliner", 150, '03-08-2024'),
-  new Expenses(3,"Mashkara", 120,'02-08-2024'),
-  new Expenses(4, "kajal",  299,'02-8-2024')
-]
+
+//! below this code is not neccessary because we add our new object in the same array which I already declared in the above.
+// let expenses =[
+//   new Expenses(1,"lipstick", 250,'02-08-2024'),
+//   new Expenses(2,"eyeliner", 150, '03-08-2024'),
+//   new Expenses(3,"Mashkara", 120,'02-08-2024'),
+//   new Expenses(4, "kajal",  299,'02-8-2024')
+// ]
 
 
 function displayExpenses(expenses){
