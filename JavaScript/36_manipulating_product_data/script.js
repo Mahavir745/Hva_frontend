@@ -35,6 +35,7 @@ let productsWithTax = products.map((ele)=>({
 }))
 
 
+
 console.log(productsWithTax);
 
 displayProducts(productsWithTax)
